@@ -1,9 +1,8 @@
 let readlineSync = require('readline-sync');
 
-let age = readlineSync.questionInt('May i know your age..?');
-
-if(age > 25) {
-  console.log('right');
-} else {
-  console.log('wrong');
+let hometown = readlineSync.question('What is Anand\'s hometown..?');
+let score = 0;
+if(hometown.toLocaleLowerCase() == 'bokaro') {
+  score ++;
 }
+console.log('your score is '+score);
